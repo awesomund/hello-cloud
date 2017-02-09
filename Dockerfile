@@ -5,10 +5,10 @@ WORKDIR /usr/src/app
 
 ENV NODE_ENV production
 COPY package.json /usr/src/app
-ADD CHECKS /app/CHECKS
 RUN npm install && npm cache clean
 
 COPY . /usr/src/app
+COPY CHECKS /app/CHECKS
 
 EXPOSE 5000
 
