@@ -8,7 +8,7 @@ COPY package.json /usr/src/app
 RUN npm install && npm cache clean
 
 COPY . /usr/src/app
-COPY CHECKS /app/CHECKS
+COPY CHECKS /app/
 
 EXPOSE 5000
 
